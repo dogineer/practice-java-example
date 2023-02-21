@@ -1,9 +1,7 @@
 package build.barrack;
 
-import unit.UnitSystemPreferencesFactory;
-
 abstract class BarrackSystemPreferencesFactory {
-    UnitSystemPreferencesFactory unitService = new UnitSystemPreferencesFactory();
+
 
     int unit_code;
 
