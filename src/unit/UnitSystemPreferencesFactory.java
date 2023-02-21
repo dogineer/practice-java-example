@@ -1,15 +1,18 @@
 package unit;
 
-public class Service{
+import unit.human.NamedObject;
+
+public class UnitSystemPreferencesFactory {
     int unit_code;
 
     public void setOprands(int unit_num){
         this.unit_code = unit_num;
-        getUnit();
+        getData();
     }
 
-    public void getUnit(){
-        Data data = unit.human.Data.unitData(this.unit_code);
+    public void getData(){
+        System.out.println(".. run getData");
+        ServiceName data = NamedObject.unitData(this.unit_code);
 
         String name = data.name;
         int attack  = data.attack;

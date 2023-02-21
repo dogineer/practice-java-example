@@ -1,7 +1,9 @@
 package unit.human;
 
-public class Data {
-    public static unit.Data unitData(int code){
+import unit.ServiceName;
+
+public class NamedObject {
+    public static ServiceName unitData(int code){
         int unit_code   = 0;
         int attack      = 0;
         int defense     = 0;
@@ -26,6 +28,6 @@ public class Data {
                 break;
         }
 
-        return new unit.Data(unit_code, attack, defense, name);
+        return new ServiceName(unit_code, attack, defense, name);
     }
 }

@@ -1,8 +1,10 @@
+import build.barrack.BarrackActionCommand;
+
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        build.barrack.Service barrack = new build.barrack.Service();
+        BarrackActionCommand barrackActionCommand = new BarrackActionCommand();
 
         System.out.println("------------------------------------");
 //        System.out.println("현재 커멘드 인구수 : ");
@@ -17,11 +19,6 @@ public class Main {
         System.out.println("3.      파뱃          (3)        5");
         System.out.println("------------------------------------");
 
-        Scanner input = new Scanner(System.in);
-        System.out.print(" 입력 : ");
-        int num = input.nextInt();
-
-        barrack.setOprands(num);
-        barrack.produce();
+        barrackActionCommand.run();
     }
 }
