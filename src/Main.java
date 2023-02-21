@@ -1,7 +1,5 @@
 import build.barrack.BarrackActionCommand;
 
-import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
         BarrackActionCommand barrackActionCommand = new BarrackActionCommand();
