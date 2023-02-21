@@ -1,10 +1,11 @@
 package build.barrack;
-
-import unit.UnitSystemPreferencesFactory;
+import unit.UnitServiceFunction;
 
 import java.util.Scanner;
 
 public class BarrackActionCommand extends BarrackSystemPreferencesFactory {
+
+    UnitServiceFunction unitServiceFunction = new UnitServiceFunction();
 
     @Override
     public void getUnitCode(){
@@ -17,7 +18,8 @@ public class BarrackActionCommand extends BarrackSystemPreferencesFactory {
     @Override
     public void produce(){
         System.out.println(".. run produce");
-        unitService.setOprands(this.unit_code);
+        unitServiceFunction.setOprands(this.unit_code);
+        unitServiceFunction.run();
     }
 
 
